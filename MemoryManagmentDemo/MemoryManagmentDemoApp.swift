@@ -11,7 +11,7 @@ import SwiftUI
 struct MemoryManagmentDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
         }
     }
 }
