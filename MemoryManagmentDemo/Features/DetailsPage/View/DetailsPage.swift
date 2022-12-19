@@ -19,6 +19,9 @@ struct DetailsPage: View {
       Image(viewModel.listImage.named)
         .fixedSize()
     }
+    .onAppear {
+      viewModel.onAppear()
+    }
   }
 }
 
