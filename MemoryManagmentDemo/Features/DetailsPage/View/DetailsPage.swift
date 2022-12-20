@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailsPage: View {
 
-  let viewModel: DetailsPageViewModel
+  @State var viewModel: DetailsPageViewModel
 
   var body: some View {
     VStack {
@@ -31,6 +31,6 @@ struct DetailsPage_Previews: PreviewProvider {
 
   static var previews: some View {
     DetailsPage(viewModel: .init(
-      listImage: .init(id: "0", named: "0")))
+      imageNamed: "0"))
   }
 }
