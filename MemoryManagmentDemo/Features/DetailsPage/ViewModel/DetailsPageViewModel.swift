@@ -11,6 +11,7 @@ final class DetailsPageViewModel {
 
   let listImage: ListImage
   var leakingCallback: (() -> Void)?
+  var leakingClass = LeakingClassExample()
 
   init(imageNamed: String) {
     self.listImage = ImageCache.shared.getImage(named: imageNamed)
@@ -26,6 +27,7 @@ final class DetailsPageViewModel {
       }
     }
     leakingCallback?()
+    leakingClass.leakingDelegate = self
   }
 }
 
@@ -36,5 +38,11 @@ extension DetailsPageViewModel: Hashable {
 
   func hash(into hasher: inout Hasher) {
     hasher.combine(listImage.named)
+  }
+}
+
+extension DetailsPageViewModel: LeakingClassDelegate {
+  func didTheThing() {
+    print("He done did the thing")
   }
 }

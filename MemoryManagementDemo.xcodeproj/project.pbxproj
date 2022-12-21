@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AB4ACBA29532E4B00DB9BA1 /* LeakingClassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4ACB929532E4B00DB9BA1 /* LeakingClassExample.swift */; };
 		6ABFAA7A2950D6CA003F5D71 /* MemoryManagmentDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABFAA792950D6CA003F5D71 /* MemoryManagmentDemoApp.swift */; };
 		6ABFAA7C2950D6CA003F5D71 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABFAA7B2950D6CA003F5D71 /* ListView.swift */; };
 		6ABFAA7E2950D6CC003F5D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABFAA7D2950D6CC003F5D71 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AB4ACB929532E4B00DB9BA1 /* LeakingClassExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeakingClassExample.swift; sourceTree = "<group>"; };
 		6ABFAA762950D6CA003F5D71 /* MemoryManagementDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryManagementDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABFAA792950D6CA003F5D71 /* MemoryManagmentDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagmentDemoApp.swift; sourceTree = "<group>"; };
 		6ABFAA7B2950D6CA003F5D71 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		6ABFAB142950FD9B003F5D71 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6AB4ACB929532E4B00DB9BA1 /* LeakingClassExample.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABFAAD82950DED0003F5D71 /* DetailsPage.swift in Sources */,
+				6AB4ACBA29532E4B00DB9BA1 /* LeakingClassExample.swift in Sources */,
 				6ABFAA7C2950D6CA003F5D71 /* ListView.swift in Sources */,
 				6ABFAADC2950DEED003F5D71 /* DetailsPageViewModel.swift in Sources */,
 				6ABFAAD52950DAAF003F5D71 /* ListImage.swift in Sources */,
