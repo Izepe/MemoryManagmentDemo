@@ -12,6 +12,9 @@ We can see that the automatic leak detection from the Profiling Tools was not ab
 
 ![Screen Shot 2022-12-19 at 16 10 37](https://user-images.githubusercontent.com/99685544/208674675-2e689d2e-06b6-41e4-a6a9-533a6ff5e6cd.png)
 
+Another example would be a delegate with a strong reference
+![Screen Shot 2022-12-21 at 09 24 25](https://user-images.githubusercontent.com/99685544/208904640-dcb8e5bc-feef-437d-bfe5-095920a2e323.png)
+
 ## SwiftUI View presentation Memory management
 
 SwiftUI NavigationLinks, sheets and full modals have a memory management behavior to keep themselvs in memory even after the view is dismissed, this is done because the view creation takes a lot of processing, so the OS favors efficiency over memory cosumption, so far I was not able to find a way to force the removal from meory. You can see the memory increasing in theimage bellow
