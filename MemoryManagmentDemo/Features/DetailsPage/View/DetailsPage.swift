@@ -20,7 +20,7 @@ struct DetailsPage: View {
         .fixedSize()
     }
     .onAppear {
-      viewModel.onAppear()
+      viewModel.onAppear(page: self)
     }
   }
 }
